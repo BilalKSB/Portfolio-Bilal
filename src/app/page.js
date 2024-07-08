@@ -14,9 +14,9 @@ export default function Home() {
       {/* <Navbar /> */}
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
-        <div style={{ height: '1800px', width: '100%' }}>
+        {/* <div style={{ height: '1800px', width: '100%' }}>
           <ThreeDModel />
-        </div>
+        </div> */}
         {/* <AchievementsSection /> */}
         <AboutSection />
         <ProjectsSection />
