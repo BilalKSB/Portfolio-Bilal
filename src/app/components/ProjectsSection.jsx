@@ -7,13 +7,14 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Développement de jeu vidéo - The Escape",
+    description: "Jeu d'horreur dans l'univers des backrooms",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/TheEscape",
   },
+
   {
     id: 2,
     title: "Potography Portfolio Website",
@@ -21,7 +22,7 @@ const projectsData = [
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/2",
   },
   {
     id: 3,
@@ -30,7 +31,7 @@ const projectsData = [
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/3",
   },
   {
     id: 4,

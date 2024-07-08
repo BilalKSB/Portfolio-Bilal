@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("/font/ClashDisplay-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ClashDisplay";
+    src: url("/font/ClashDisplay-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ClashDisplay";
+    src: url("/font/ClashDisplay-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ClashDisplay";
+    src: url("/font/ClashDisplay-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ClashDisplay";
+    src: url("/font/ClashDisplay-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ClashDisplay";
+    src: url("/font/ClashDisplay-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-family: "ClashDisplay", "sans-serif";
+    -moz-tab-size: 4;
+      -o-tab-size: 4;
+         tab-size: 4;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" 32;
+    margin: auto;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    background-color: #0e100f;
+    color: #fffce1;
+  }
+  
+  .height {
+    height: 70vh;
+  }
+  
+  header {
+    z-index: 50;
+    background-color: rgb(23, 23, 23);
+    position: fixed;
+    width: 100%;
+    padding: 18px 12px;
+    display: flex;
+    justify-content: space-around;
+  }
+  header div {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  header img {
+    width: 26px;
+  }
+  header img:hover {
+    filter: opacity(0.5);
+  }
+  header ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+    width: 100%;
+    font-size: 16px;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  header ul li a:hover {
+    opacity: 0.6;
+  }
+  
+  .windows-logo {
+    width: 45px; /* Ajustez cette valeur pour définir la largeur souhaitée */
+    height: auto; /* Assurez-vous que l'image conserve son ratio d'aspect */
+    margin-bottom: 1px; /* Ajoutez un espace entre l'image et le texte */
+  }
+  
+  /* a {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+  } */
+  /* a.secondary p-4  {
+    height: 10px;
+    margin-left: 10px;
+  } */
+  a.primary {
+    background-color: #ff87c3;
+    border: 2px solid #ff87c3;
+    height: 0px;
+    gap: 12px;  
+    margin-left: 10px; 
+  }
+  .main-hero .call-to-action {
+    margin-top: 16px; /* Ajouter de la marge pour séparer les éléments */
+  }
+  .download-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  a.secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  .main-hero .main-title {
+    text-align: center; /* Ajoutez cette ligne */
+    font-size: max(5.125rem, min(14.3333vw + 2rem, 18rem));
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    text-transform: capitalize;
+  }
+  .main-hero .hero-element {
+    display: flex;
+    flex-direction: column; /* Changer en column pour empiler les éléments verticalement */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* .main-hero .main-title text {
+    font-size: max(5.125rem, min(13&.3333vw + 2rem, 18rem));
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    text-transform: capitalize;
+  } */
+  
+  .team-section {
+    margin: 64px auto 64px auto;
+  }
+  .team-section .team-description {
+    text-align: center;
+  }
+  .team-section .team-members {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  .team-section li:nth-child(2n) {
+    padding: 0 10px;
+    color: #ff87c3;
+    font-size: 5rem;
+  }
+  .team-section .strong {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-direction: reverse;
+    background-image: linear-gradient(100deg, #cc4689 0%, #ff87c3 100%);
+    background-size: 100% 100%;
+    background-clip: text;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+    color: #ff87c3;
+  }
+  
+  .project-cards {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 20px);
+    gap: 8px;
+  }
+  .project-cards .project-card {
+    width: 40%;
+    aspect-ratio: 5/2;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #db4f66;
+    border-radius: 10px;
+    position: relative;
+    filter: grayscale(0.8);
+  }
+  .project-cards .project-card .card-number {
+    font-size: 3rem;
+  }
+  .project-cards .project-card .job-title {
+    font-size: 1.2rem;
+  }
+  .project-cards .project-card .member-name {
+    font-size: 1.5rem;
+  }
+  .project-cards .project-card:nth-child(1) {
+    background-image: url(/photo/ast.JPG);
+    background-size: cover;
+    background-position: 50% 30%;
+  }
+  .project-cards .project-card:nth-child(2) {
+    background-image: url(/photo/est.JPG);
+    background-size: cover;
+    background-position: 50% 20%;
+  }
+  .project-cards .project-card:nth-child(3) {
+    background-image: url(/photo/hug.JPG);
+    background-size: cover;
+  }
+  .project-cards .project-card:nth-child(4) {
+    background-image: url(/photo/tom.JPG);
+    background-size: cover;
+    background-position: 50% 20%;
+  }
+  .project-cards .project-card:nth-child(5) {
+    background-image: url(/photo/bil.JPG);
+    background-size: cover;
+    background-position: 50% 10%;
+  }
+  .project-cards .project-card:nth-child(6) {
+    background-image: url(/photo/nab.JPG);
+    background-size: cover;
+    background-position: 50% 20%;
+  }
+  .project-cards .project-card:hover {
+    filter: grayscale(0);
+  }
+  
+  .immersive-gameplay-section {
+    margin: 40px auto;
+    width: 80%;
+    text-align: left;
+  }
+  .immersive-gameplay-section .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .immersive-gameplay-section .section-paragraph {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 10px 0;
+  }
+  .immersive-gameplay-section .section-cta {
+    margin-top: 20px;
+    width: 420px;
+  }
+  .immersive-gameplay-section .section-cta .secondary-cta {
+    background-color: transparent;
+    color: #ff87c3;
+    border: 2px solid #ff87c3;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .immersive-gameplay-section .section-cta .secondary-cta:hover {
+    background-color: #ff87c3;
+    color: black;
+  }
+  .immersive-gameplay-section .section-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .immersive-gameplay-section .section-images img {
+    max-width: 50%;
+
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .backroom1,
+  .backroom2 {
+  margin-left: 1%;
+}
+  .shining1,
+  .shining2 {
+  margin-left: 1%;
+}
+
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgb(23, 23, 23);
+  }
+  footer .footer {
+    width: 80%;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer .backroom-image {
+    padding: 40px;
+  }
+  footer .footer .backroom-image img {
+    width: 140px;
+    height: 140px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
+  footer .footer .right-panel tr {
+    display: flex;
+    gap: 20px;
+  }
+  footer .footer .right-panel tr th, footer .footer .right-panel tr td {
+    width: 80px;
+  }
+
